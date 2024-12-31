@@ -7,12 +7,19 @@
     <title>Coin Market Cap</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
 </head>
 
 <body>
     <div class="app">
         <div class="logo">
-            <div class="container">COIN</div>
+            <div class="container">
+                <img src="assets/img/WCOIN.svg" alt="">
+            </div>
         </div>
 
         <div class="menu">
@@ -27,19 +34,44 @@
 
         <div class="profile">
             <div class="container">
-                <a href="#">profile</a>
+                <div class="profile-dropdown">
+
+                    <div class="profile-dropdown-btn" onclick="toggle()">
+            
+                      <div class="menu-bars"><i class="fa-solid fa-bars"></i></div>
+            
+                      <div class="profile-dropdown-image">
+            
+                        <span>5</span>
+                      </div>
+            
+                    </div>
+            
+                    <ul class="profile-menu">
+                      <li>
+                        <a href="#"><i class="fa-solid fa-user"></i>Edit Profile</a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-solid fa-circle-info"></i>About wcoin</a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="fa-solid fa-right-from-bracket"></i>Sign Out</a>
+                      </li>
+                    </ul>
+            
+                  </div>
             </div>
         </div>
 
         <div class="listing">
             <div class="container">
                 <div class="titleheading">
-                    <h1>Top coins by marketcap</h1>
+                    <h1>Today's Cryptocurrency Prices by Market Cap</h1>
                     <p>The global crypto market cap is&nbsp;$3.48T,&nbsp;a&nbsp;1.11%&nbsp;increase over the last day.
                         Read More</p>
                 </div>
                 <div class="tablecoins">
-                    <table width="100%">
+                    <table >
                         <thead>
                             <tr>
                                 <th>Name</th>
@@ -54,7 +86,7 @@
                             <tr>
                                 <td>
                                     <div class="token-name">
-                                        <img src="assets/media/tokenicons/bitcoin.png" alt="Bitcoin">
+                                        <img src="assets/img/tokenicons/bitcoin.png" alt="Bitcoin">
                                         <div>
                                             <span>Bitcoin</span>
                                             <div class="symboltoken">BTC</div>
@@ -70,7 +102,7 @@
                             <tr>
                                 <td>
                                     <div class="token-name">
-                                        <img src="assets/media/tokenicons/eth.png" alt="Ethereum">
+                                        <img src="assets/img/tokenicons/eth.png" alt="Ethereum">
                                         <div>
                                             <span>Ethereum</span>
                                             <div class="symboltoken">ETH</div>
@@ -86,7 +118,7 @@
                             <tr>
                                 <td>
                                     <div class="token-name">
-                                        <img src="assets/media/tokenicons/xrp.png" alt="XRP">
+                                        <img src="assets/img/tokenicons/xrp.png" alt="XRP">
                                         <div>
                                             <span>XRP</span>
                                             <div class="symboltoken">XRP</div>
@@ -102,7 +134,7 @@
                             <tr>
                                 <td>
                                     <div class="token-name">
-                                        <img src="assets/media/tokenicons/Tether.png" alt="Tether">
+                                        <img src="assets/img/tokenicons/Tether.png" alt="Tether">
                                         <div>
                                             <span>Tether</span>
                                             <div class="symboltoken">USDT</div>
@@ -118,7 +150,87 @@
                             <tr>
                                 <td>
                                     <div class="token-name">
-                                        <img src="assets/media/tokenicons/solana.png" alt="Solana">
+                                        <img src="assets/img/tokenicons/solana.png" alt="Solana">
+                                        <div>
+                                            <span>Solana</span>
+                                            <div class="symboltoken">SOL</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$229.10</td>
+                                <td>0.68%</td>
+                                <td>5.87 %</td>
+                                <td>4.58%</td>
+                                <td>$4,032,656,468</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="token-name">
+                                        <img src="assets/img/tokenicons/solana.png" alt="Solana">
+                                        <div>
+                                            <span>Solana</span>
+                                            <div class="symboltoken">SOL</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$229.10</td>
+                                <td>0.68%</td>
+                                <td>5.87 %</td>
+                                <td>4.58%</td>
+                                <td>$4,032,656,468</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="token-name">
+                                        <img src="assets/img/tokenicons/solana.png" alt="Solana">
+                                        <div>
+                                            <span>Solana</span>
+                                            <div class="symboltoken">SOL</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$229.10</td>
+                                <td>0.68%</td>
+                                <td>5.87 %</td>
+                                <td>4.58%</td>
+                                <td>$4,032,656,468</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="token-name">
+                                        <img src="assets/img/tokenicons/solana.png" alt="Solana">
+                                        <div>
+                                            <span>Solana</span>
+                                            <div class="symboltoken">SOL</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$229.10</td>
+                                <td>0.68%</td>
+                                <td>5.87 %</td>
+                                <td>4.58%</td>
+                                <td>$4,032,656,468</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="token-name">
+                                        <img src="assets/img/tokenicons/solana.png" alt="Solana">
+                                        <div>
+                                            <span>Solana</span>
+                                            <div class="symboltoken">SOL</div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>$229.10</td>
+                                <td>0.68%</td>
+                                <td>5.87 %</td>
+                                <td>4.58%</td>
+                                <td>$4,032,656,468</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="token-name">
+                                        <img src="assets/img/tokenicons/solana.png" alt="Solana">
                                         <div>
                                             <span>Solana</span>
                                             <div class="symboltoken">SOL</div>
@@ -146,20 +258,22 @@
             <div class="container">
                 <div class="ctamsg">
                     <h2>Stay on top of crypto. All the time, any time.</h2>
-                      <p>Please keep me updated by email with the latest crypto news, research findings, reward programs,
+                    <p>Please keep me updated by email with the latest crypto news, research findings, reward programs,
                         event updates, coin listings and more information from CoinMarketCap.</p>
-                  </div>
-                  <div class="ctaimage">
-                    <img src="assets/media/coins.webp" alt="Icons of top coins">
-                  </div>
+                </div>
+                <div class="ctaimage">
+                    <img src="assets/img/coins.webp" alt="Icons of top coins">
+                </div>
             </div>
         </div>
         <div class="footer">
             <div class="container">
-                <div class="copyright">2025</div>
+                <div class="copyright"><p>&copy; 2025 WCOIN </p>
+                </div>
             </div>
         </div>
     </div>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
