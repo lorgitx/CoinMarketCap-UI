@@ -1,5 +1,5 @@
 const APPCONFIG = {
-    API: "/api/"
+    API: "/api"
 };
 
 let getPricesInvterval;
