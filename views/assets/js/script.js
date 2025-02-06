@@ -1,3 +1,4 @@
+//Global APP Configuration
 const APPCONFIG = {
     API: "/api"
 };
@@ -23,6 +24,7 @@ async function GetPrices() {
     renderTable(prices);
 }
 
+//Render the table with the prices from CoinGecko
 function renderTable(prices) {
 
     const tableBody = document.querySelector("table tbody");
@@ -30,8 +32,9 @@ function renderTable(prices) {
 
     for (const key in prices) {
         if (Object.prototype.hasOwnProperty.call(prices, key)) {
-            
-            if(prices[key].usd_market_cap == 0)  continue;
+
+            // If MarketCap come from CGecko with 0, skip it
+            if (prices[key].usd_market_cap == 0) continue;
 
             const row = document.createElement('tr');
             row.innerHTML = `
@@ -43,7 +46,6 @@ function renderTable(prices) {
             tableBody.appendChild(row);
         }
     }
-
 }
 
 //Handle fetchs
@@ -56,7 +58,7 @@ async function FetchData(url) {
         };
         const response = await fetch(url, opts);
         if (!response.ok) {
-       
+
             throw new Error(`HTTP Status: ${response.status}`);
 
         }
